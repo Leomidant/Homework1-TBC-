@@ -14,5 +14,6 @@ public class AppTest {
         driver.findElement(By.linkText("Forgot Password")).click();
         driver.findElement(By.id("email")).sendKeys("test@gmail.com");
         driver.findElement(By.id("form_submit")).click();
+        driver.quit();
     }
 }
