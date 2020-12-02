@@ -11,7 +11,7 @@ public class AppTest {
         WebDriverManager.getInstance(CHROME).setup();
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/");
-        driver.findElement(By.xpath("//*[@id=\"content\"]/ul/li[20]/a")).click();
+        driver.findElement(By.linkText("Forgot Password")).click();
         driver.findElement(By.id("email")).sendKeys("test@gmail.com");
         driver.findElement(By.id("form_submit")).click();
     }
